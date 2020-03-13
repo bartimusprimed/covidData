@@ -19,6 +19,7 @@
   }
 
   onMount(async function getData() {
+    alert("Data is being loaded from: Johns Hopkins Arcgis Chart");
     const resp = await fetch(url);
     var combined = {};
     var temp = await resp.json();
