@@ -118,10 +118,10 @@ Totals:
 {total_deaths}
 </td>
 <td>
-{total_fatality_rate.toFixed(2)}
+{total_fatality_rate.toFixed(2)}%
 </td>
 <td>
-{total_recovery_rate.toFixed(2)}
+{total_recovery_rate.toFixed(2)}%
 </td>
 </tr>
 </tbody>
@@ -171,14 +171,14 @@ Totals:
         }{
           getTotalFatalities(data[item]) < total_fatality_rate ? "is-success" : "" 
           }">
-      {getTotalFatalities(data[item]).toFixed(2)}
+      {getTotalFatalities(data[item]).toFixed(2)}%
       </td>
       <td class="{
         getTotalRecoveries(data[item]) < total_recovery_rate ? "is-warning" : "" 
         }{
           getTotalRecoveries(data[item]) > total_recovery_rate ? "is-success" : "" 
           }">
-      {getTotalRecoveries(data[item]).toFixed(2)}
+      {getTotalRecoveries(data[item]).toFixed(2)}%
       </td>
       </tr>
   {/each}
